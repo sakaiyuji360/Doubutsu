@@ -11,4 +11,9 @@ class Niwatori extends AbstractKoma {
 
     return false;
   }
+  
+  void captured(){
+    super.captured();
+    komaList.demote(this);
+  }
 }
